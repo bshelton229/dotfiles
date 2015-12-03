@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+
+print('This will be an install script')
