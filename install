@@ -1,3 +1,29 @@
 #!/usr/bin/env python
 
-print('This will be an install script')
+import os
+
+
+BASE_PATH = os.path.dirname(os.path.realpath(__file__))
+DOTFILES_PATH = os.path.join(BASE_PATH, 'dotfiles')
+HOME = os.path.expanduser('~')
+
+
+# TODO: Rename originals if they aren't
+# links to our project
+def create_links():
+    for file in os.listdir(DOTFILES_PATH):
+        path = os.path.join(DOTFILES_PATH, file)
+        if os.path.isfile(path):
+            dst = os.path.join(HOME, ".{}".format(file))
+            try:
+                os.symlink(path, dst)
+            except OSError:
+                pass
+
+
+def main():
+    create_links()
+
+
+if __name__ == '__main__':
+    main()
