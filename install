@@ -28,7 +28,10 @@ def install_nvim():
 
     try:
         os.makedirs(autoload_path)
-        os.symlink(os.path.join(BASE_PATH, 'neovim/nvimrc'), os.path.join(nvim_config_path, 'init.vim'))
+        os.symlink(
+            os.path.join(BASE_PATH, 'neovim/nvimrc'),
+            os.path.join(nvim_config_path, 'init.vim')
+        )
     except OSError:
         pass
 
