@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
 import os
+import subprocess
 
 
 BASE_PATH = os.path.dirname(os.path.realpath(__file__))
 DOTFILES_PATH = os.path.join(BASE_PATH, 'dotfiles')
 HOME = os.path.expanduser('~')
-
 
 # TODO: Rename originals if they aren't
 # links to our project
@@ -21,8 +21,30 @@ def create_links():
                 pass
 
 
+def install_nvim():
+    nvim_config_path = os.path.join(HOME, '.config/nvim')
+    autoload_path = os.path.join(nvim_config_path, 'autoload')
+    plug_path = os.path.join(autoload_path, 'plug.vim')
+
+    try:
+        os.makedirs(autoload_path)
+        os.symlink(os.path.join(BASE_PATH, 'neovim/nvimrc'), os.path.join(nvim_config_path, 'init.vim'))
+    except OSError:
+        pass
+
+    if not os.path.exists(plug_path):
+        subprocess.call([
+            "curl",
+            "-fLo",
+            plug_path,
+            "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim",
+        ])
+        print("Now run 'nvim +PlugInstall'")
+
+
 def main():
     create_links()
+    install_nvim()
 
 
 if __name__ == '__main__':
