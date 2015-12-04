@@ -26,10 +26,12 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'Yggdroot/indentLine'
+Plug 'benekastah/neomake'
 
 " Themes
 Plug 'tomasr/molokai'
 Plug 'vim-scripts/xoria256.vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -38,7 +40,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-colorscheme xoria256
+colorscheme onedark
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
