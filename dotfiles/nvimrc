@@ -1,40 +1,38 @@
-" Vundle setup
-filetype off
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle')
+" Plug
+" https://github.com/junegunn/vim-plug
+call plug#begin('~/.config/nvim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-rails'
-Plugin 'itchyny/lightline.vim'
-Plugin 'wting/rust.vim'
-Plugin 'Townk/vim-autoclose'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'vim-scripts/nginx.vim'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'Yggdroot/indentLine'
+Plug 'gmarik/Vundle.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-rails'
+Plug 'itchyny/lightline.vim'
+Plug 'wting/rust.vim'
+Plug 'Townk/vim-autoclose'
+Plug 'digitaltoad/vim-jade'
+Plug 'vim-scripts/nginx.vim'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'Yggdroot/indentLine'
 
 " Themes
-Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/xoria256.vim'
+Plug 'tomasr/molokai'
+Plug 'vim-scripts/xoria256.vim'
 
-call vundle#end()
+call plug#end()
 
 "The comma leader
 let mapleader=","
