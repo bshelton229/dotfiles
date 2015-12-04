@@ -3,7 +3,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gmarik/Vundle.vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
