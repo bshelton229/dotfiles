@@ -15,7 +15,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'jeetsukumaran/vim-buffergator'
-
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -29,6 +28,7 @@ Plugin 'vim-scripts/nginx.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Yggdroot/indentLine'
 
 " Themes
 Plugin 'tomasr/molokai'
@@ -70,3 +70,6 @@ let g:buffergator_viewport_split_policy="T"
 " Some mouse settings
 set ttyfast
 set mouse=a
+
+let g:indentLine_char = '│'
+let g:indentLine_enabled = 1
