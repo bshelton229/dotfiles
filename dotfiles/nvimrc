@@ -1,7 +1,7 @@
 " Vundle setup
 filetype off
-set rtp+=~/.nvim/bundle/Vundle.vim
-call vundle#begin('~/.nvim/bundle')
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin('~/.config/nvim/bundle')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -68,6 +68,5 @@ inoremap jk <ESC>
 let g:buffergator_viewport_split_policy="T"
 
 " Some mouse settings
-set ttymouse=sgr
 set ttyfast
 set mouse=a
