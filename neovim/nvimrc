@@ -24,7 +24,6 @@ Plug 'digitaltoad/vim-jade'
 Plug 'vim-scripts/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'plasticboy/vim-markdown'
 Plug 'Yggdroot/indentLine'
 Plug 'benekastah/neomake'
 
@@ -40,7 +39,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-colorscheme onedark
+colorscheme xoria256
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
@@ -73,3 +72,5 @@ set mouse=a
 let g:indentLine_char = '¦'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_auto_colors = 0
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
