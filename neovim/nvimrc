@@ -39,7 +39,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-colorscheme xoria256
+colorscheme onedark
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
