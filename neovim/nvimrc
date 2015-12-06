@@ -32,6 +32,7 @@ Plug 'majutsushi/tagbar'
 Plug 'tomasr/molokai'
 Plug 'vim-scripts/xoria256.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'matthewtodd/vim-twilight'
 
 call plug#end()
 
