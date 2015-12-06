@@ -30,10 +30,8 @@ Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe'
 
 " Themes
-Plug 'tomasr/molokai'
-Plug 'vim-scripts/xoria256.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'matthewtodd/vim-twilight'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
@@ -42,7 +40,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-colorscheme twilight
+colorscheme twilight256
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
@@ -82,3 +80,7 @@ let g:indentLine_leadingSpaceChar = '·'
 " NERDTree config
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 let NERDTreeShowHidden=1
+
+" Some kay maps
+nnoremap <CR> o<Esc>
+nnoremap <leader>j i<CR><Esc>==
