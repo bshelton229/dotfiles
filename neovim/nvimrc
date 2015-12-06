@@ -27,6 +27,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'benekastah/neomake'
 Plug 'mileszs/ack.vim'
+Plug 'majutsushi/tagbar'
 
 " Themes
 Plug 'tomasr/molokai'
