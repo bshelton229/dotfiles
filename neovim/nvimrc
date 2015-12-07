@@ -33,6 +33,7 @@ Plug 'floobits/floobits-neovim'
 " Themes
 Plug 'joshdick/onedark.vim'
 Plug 'matthewtodd/vim-twilight'
+Plug 'Lokaltog/vim-distinguished'
 
 call plug#end()
 
@@ -42,7 +43,7 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 au BufNewFile,BufRead *.sls setlocal ft=yaml
-colorscheme twilight
+colorscheme distinguished
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
@@ -65,9 +66,12 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-" Better escape key
+" Key maps
 inoremap jk <ESC>
 nnoremap K i<CR><Esc>
+noremap <leader>cs :let @/=''<cr>`
+map <C-n> :NERDTreeToggle<CR>
+
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
