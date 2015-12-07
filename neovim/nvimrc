@@ -41,6 +41,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
+au BufNewFile,BufRead *.sls setlocal ft=yaml
 colorscheme twilight
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
