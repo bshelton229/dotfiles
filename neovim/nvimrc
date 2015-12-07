@@ -28,6 +28,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'benekastah/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe'
+Plug 'floobits/floobits-neovim'
 
 " Themes
 Plug 'joshdick/onedark.vim'
@@ -53,6 +54,9 @@ set backspace=2
 
 " Flymode
 let g:AutoPairsFlyMode = 1
+
+" Turn off tab for completion
+let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
 
 " Undo
 set undodir=~/.nvim/undodir
