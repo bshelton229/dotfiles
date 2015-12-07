@@ -31,7 +31,7 @@ Plug 'Valloric/YouCompleteMe'
 
 " Themes
 Plug 'joshdick/onedark.vim'
-Plug 'flazz/vim-colorschemes'
+Plug 'matthewtodd/vim-twilight'
 
 call plug#end()
 
@@ -40,7 +40,7 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-colorscheme twilight256
+colorscheme twilight
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
