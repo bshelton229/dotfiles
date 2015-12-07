@@ -66,6 +66,7 @@ set undoreload=10000
 
 " Better escape key
 inoremap jk <ESC>
+nnoremap K i<CR><Esc>
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
