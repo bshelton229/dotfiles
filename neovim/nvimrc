@@ -29,6 +29,7 @@ Plug 'benekastah/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe'
 Plug 'floobits/floobits-neovim'
+Plug 'morhetz/gruvbox'
 
 " Themes
 Plug 'joshdick/onedark.vim'
