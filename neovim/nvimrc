@@ -72,6 +72,7 @@ inoremap jk <ESC>
 nnoremap K i<CR><Esc>
 noremap <leader>cs :let @/=''<cr>`
 map <C-n> :NERDTreeToggle<CR>
+tnoremap <Esc> <C-\><C-n>
 
 
 " Buffergator
@@ -95,3 +96,12 @@ let NERDTreeShowHidden=0
 " Some kay maps
 nnoremap <CR> o<Esc>
 nnoremap <leader>j i<CR><Esc>==
+
+" Faster ctrlp using VCS
+let g:ctrlp_user_command = {
+	\ 'types': {
+		\ 1: ['.git', 'cd %s && git ls-files'],
+		\ 2: ['.hg', 'hg --cwd %s locate -I .'],
+		\ },
+	\ 'fallback': 'find %s -type f'
+	\ }
