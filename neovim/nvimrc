@@ -30,6 +30,7 @@ Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe'
 Plug 'floobits/floobits-neovim'
 Plug 'morhetz/gruvbox'
+Plug 'fatih/vim-go'
 
 " Themes
 Plug 'joshdick/onedark.vim'
@@ -72,7 +73,6 @@ inoremap jk <ESC>
 nnoremap K i<CR><Esc>
 noremap <leader>cs :let @/=''<cr>`
 map <C-n> :NERDTreeToggle<CR>
-tnoremap <Esc> <C-\><C-n>
 
 
 " Buffergator
