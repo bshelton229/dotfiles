@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'gmarik/Vundle.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -84,8 +85,8 @@ set mouse=a
 
 let g:indentLine_char = '¦'
 let g:indent_guides_enable_on_vim_startup=1
-let g:indentLine_enabled = 0
-let g:indent_guides_auto_colors = 0
+let g:indentLine_enabled = 1
+let g:indent_guides_auto_colors = 1
 let g:indentLine_leadingSpaceEnabled = 0
 let g:indentLine_leadingSpaceChar = '·'
 
@@ -105,3 +106,7 @@ let g:ctrlp_user_command = {
 		\ },
 	\ 'fallback': 'find %s -type f'
 	\ }
+
+"" Neomake
+" run make on each save
+autocmd! BufWritePost * Neomake
