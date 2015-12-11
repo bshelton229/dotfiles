@@ -47,8 +47,8 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 au BufNewFile,BufRead *.sls setlocal ft=yaml
-" colorscheme distinguished
-colorscheme badwolf
+colorscheme distinguished
+" colorscheme badwolf
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
@@ -87,7 +87,7 @@ set mouse=a
 
 let g:indentLine_char = '¦'
 let g:indent_guides_enable_on_vim_startup=1
-let g:indentLine_enabled = 1
+let g:indentLine_enabled = 0
 let g:indent_guides_auto_colors = 1
 let g:indentLine_leadingSpaceEnabled = 0
 let g:indentLine_leadingSpaceChar = '·'
