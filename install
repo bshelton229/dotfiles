@@ -8,6 +8,7 @@ BASE_PATH = os.path.dirname(os.path.realpath(__file__))
 DOTFILES_PATH = os.path.join(BASE_PATH, 'dotfiles')
 HOME = os.path.expanduser('~')
 
+
 # TODO: Rename originals if they aren't
 # links to our project
 def create_links():

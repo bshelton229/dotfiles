@@ -37,6 +37,7 @@ Plug 'fatih/vim-go'
 Plug 'joshdick/onedark.vim'
 Plug 'matthewtodd/vim-twilight'
 Plug 'Lokaltog/vim-distinguished'
+Plug 'sjl/badwolf'
 
 call plug#end()
 
@@ -46,7 +47,8 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 au BufNewFile,BufRead *.sls setlocal ft=yaml
-colorscheme distinguished
+" colorscheme distinguished
+colorscheme badwolf
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
