@@ -3,7 +3,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gmarik/Vundle.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
@@ -32,14 +31,20 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'floobits/floobits-neovim'
 Plug 'morhetz/gruvbox'
 Plug 'fatih/vim-go'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Themes
 Plug 'joshdick/onedark.vim'
 Plug 'matthewtodd/vim-twilight'
 Plug 'Lokaltog/vim-distinguished'
 Plug 'sjl/badwolf'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
+
+" Color scheme settings
+colorscheme base16-twilight
+set background=dark
 
 "The comma leader
 let mapleader=","
@@ -47,8 +52,6 @@ let mapleader=","
 filetype plugin indent on
 syntax on
 au BufNewFile,BufRead *.sls setlocal ft=yaml
-colorscheme twilight
-" colorscheme badwolf
 " Better whitespace color highlight. Less annoying
 highlight ExtraWhitespace ctermbg=lightgreen
 
@@ -100,17 +103,9 @@ let NERDTreeShowHidden=0
 nnoremap <CR> o<Esc>
 nnoremap <leader>j i<CR><Esc>==
 
-" CTRLP settings
-let g:ctrlp_user_command = {
-	\ 'types': {
-		\ 1: ['.git', 'cd %s && git ls-files'],
-		\ 2: ['.hg', 'hg --cwd %s locate -I .'],
-		\ },
-	\ 'fallback': 'find %s -type f'
-	\ }
-let g:ctrlp_regexp = 1
-
-
 "" Neomake
 " run make on each save
 autocmd! BufWritePost * Neomake
+
+" Make FZF work on ctrlp
+map <C-p> :FZF<CR>
