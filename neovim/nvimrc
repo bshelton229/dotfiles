@@ -32,6 +32,7 @@ Plug 'floobits/floobits-neovim'
 Plug 'morhetz/gruvbox'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'smerrill/vcl-vim-plugin'
 
 " Themes
 Plug 'joshdick/onedark.vim'
@@ -107,5 +108,7 @@ nnoremap <leader>j i<CR><Esc>==
 " run make on each save
 autocmd! BufWritePost * Neomake
 
-" Make FZF work on ctrlp
+" Make FZF work as ctrlp
 map <C-p> :FZF<CR>
+
+set completeopt-=preview
