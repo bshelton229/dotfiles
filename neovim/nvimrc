@@ -34,6 +34,7 @@ Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
 
 " Themes
 Plug 'joshdick/onedark.vim'
