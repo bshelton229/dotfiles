@@ -10,5 +10,5 @@ This will wire up the included dotfiles, and could cause data loss.
 
 ### iterm2 color schemes
 
-https://github.com/nathanbuchar/atom-one-dark-terminal
-https://github.com/chriskempson/base16-iterm2
+- https://github.com/nathanbuchar/atom-one-dark-terminal
+- https://github.com/chriskempson/base16-iterm2
