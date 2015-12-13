@@ -78,10 +78,12 @@ set undolevels=1000
 set undoreload=10000
 
 " Key maps
+inoremap jj <ESC>
 inoremap jk <ESC>
 nnoremap K i<CR><Esc>
 noremap <leader>cs :let @/=''<cr>`
 map <C-n> :NERDTreeToggle<CR>
+map <C-p> :FZF<CR>
 
 
 " Buffergator
@@ -109,8 +111,5 @@ nnoremap <leader>j i<CR><Esc>==
 "" Neomake
 " run make on each save
 autocmd! BufWritePost * Neomake
-
-" Make FZF work as ctrlp
-map <C-p> :FZF<CR>
 
 set completeopt-=preview

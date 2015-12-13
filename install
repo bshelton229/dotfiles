@@ -14,10 +14,11 @@ HOME = os.path.expanduser('~')
 def create_links():
     for file in os.listdir(DOTFILES_PATH):
         path = os.path.join(DOTFILES_PATH, file)
+        relpath = os.path.relpath(path, HOME)
         if os.path.isfile(path):
             dst = os.path.join(HOME, ".{}".format(file))
             try:
-                os.symlink(path, dst)
+                os.symlink(relpath, dst)
             except OSError:
                 pass
 
@@ -29,8 +30,15 @@ def install_nvim():
 
     try:
         os.makedirs(autoload_path)
+    except OSError:
+        pass
+
+    try:
         os.symlink(
-            os.path.join(BASE_PATH, 'neovim/nvimrc'),
+            os.path.relpath(
+                os.path.join(BASE_PATH, 'neovim/nvimrc'),
+                nvim_config_path
+            ),
             os.path.join(nvim_config_path, 'init.vim')
         )
     except OSError:
