@@ -9,6 +9,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -65,8 +66,6 @@ set backspace=2
 " Flymode
 let g:AutoPairsFlyMode = 1
 
-" Turn off tab for completion
-let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
 
 " Undo
 set undodir=~/.nvim/undodir
@@ -109,4 +108,8 @@ nnoremap <leader>j i<CR><Esc>==
 " run make on each save
 autocmd! BufWritePost * Neomake
 
+" YCM settings
 set completeopt-=preview
+let g:ycm_auto_trigger=0
+" Turn off tab for completion
+let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
