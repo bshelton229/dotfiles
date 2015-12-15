@@ -114,3 +114,6 @@ set completeopt-=preview
 let g:ycm_auto_trigger=0
 " Turn off tab for completion
 let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
+
+" Delimate settings
+let delimitMate_expand_cr = 1
