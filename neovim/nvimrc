@@ -116,4 +116,4 @@ let g:ycm_auto_trigger=0
 let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
 
 " Delimate settings
-let delimitMate_expand_cr = 1
+let delimitMate_expand_cr=1
