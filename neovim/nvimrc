@@ -9,11 +9,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'fholgado/minibufexpl.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'SirVer/ultisnips'
@@ -111,12 +109,6 @@ nnoremap <leader>j i<CR><Esc>==
 "" Neomake
 " run make on each save
 autocmd! BufWritePost * Neomake
-
-" YCM settings
-set completeopt-=preview
-let g:ycm_auto_trigger=0
-" Turn off tab for completion
-let g:ycm_key_list_select_completion = ['<Enter>', '<Down>']
 
 " Delimate settings
 let delimitMate_expand_cr=1
