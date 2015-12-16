@@ -114,3 +114,8 @@ autocmd! BufWritePost * Neomake
 
 " Delimate settings
 let delimitMate_expand_cr=1
+
+" Buffer navigation
+nmap <leader>= :bnext<CR>
+nmap <leader>- :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
