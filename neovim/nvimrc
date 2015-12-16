@@ -101,6 +101,7 @@ let g:indentLine_leadingSpaceChar = '·'
 " NERDTree config
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 let NERDTreeShowHidden=0
+let NERDTreeMouseMode=2
 
 " Some kay maps
 nnoremap <CR> o<Esc>
