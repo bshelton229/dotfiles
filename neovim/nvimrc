@@ -58,9 +58,10 @@ filetype plugin indent on
 syntax on
 au BufNewFile,BufRead *.sls setlocal ft=yaml
 
-set hlsearch
+" Tab settings
 set expandtab
-set tabstop=2 shiftwidth=2 softtabstop=2
+
+set hlsearch
 set showcmd
 set number
 set backspace=2
