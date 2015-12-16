@@ -60,6 +60,9 @@ au BufNewFile,BufRead *.sls setlocal ft=yaml
 
 " Tab settings
 set expandtab
+set ts=4
+set sts=4
+set sw=4
 
 set hlsearch
 set showcmd
