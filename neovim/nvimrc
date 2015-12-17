@@ -145,3 +145,9 @@ if has('autocmd') && !exists('autocommands_loaded')
 
     autocmd BufNewFile,BufRead *.sls setlocal ft=yaml
 endif
+
+" code folding settings
+set foldmethod=syntax " fold based on indent
+set foldnestmax=10 " deepest fold is 10 levels
+set nofoldenable " don't fold by default
+set foldlevel=1
