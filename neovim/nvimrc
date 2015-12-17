@@ -84,7 +84,7 @@ set undoreload=10000
 inoremap jj <ESC>
 inoremap jk <ESC>
 nnoremap K i<CR><Esc>
-noremap <space> :set hlsearch! hlsearch?<cr>
+noremap <space> :let @/=''<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 
