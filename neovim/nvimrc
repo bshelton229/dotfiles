@@ -33,6 +33,7 @@ Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'mattn/emmet-vim'
+Plug 'ap/vim-buftabline'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
