@@ -29,7 +29,7 @@ Plug 'benekastah/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'floobits/floobits-neovim'
 Plug 'morhetz/gruvbox'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
@@ -67,14 +67,16 @@ set ts=4
 set sts=4
 set sw=4
 
+" Searching
 set hlsearch
+set smartcase
+
 set showcmd
 set number
 set backspace=2
 
 " Flymode
 let g:AutoPairsFlyMode = 1
-
 
 " Undo
 set undodir=~/.nvim/undodir
@@ -86,7 +88,7 @@ set undoreload=10000
 inoremap jj <ESC>
 inoremap jk <ESC>
 nnoremap K i<CR><Esc>
-noremap <leader>cs :let @/=''<cr>`
+noremap <space> :set hlsearch! hlsearch?<cr>
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 
