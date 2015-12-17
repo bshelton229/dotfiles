@@ -42,10 +42,6 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'pangloss/vim-javascript'
 
 " Themes
-Plug 'joshdick/onedark.vim'
-Plug 'matthewtodd/vim-twilight'
-Plug 'Lokaltog/vim-distinguished'
-Plug 'sjl/badwolf'
 Plug 'chriskempson/base16-vim'
 
 call plug#end()
