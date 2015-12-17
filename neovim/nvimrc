@@ -129,3 +129,6 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='base16'
+
+" Buffertabline config
+let g:buftabline_show=1
