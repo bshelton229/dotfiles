@@ -34,6 +34,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-buftabline'
+Plug 'bling/vim-airline'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
@@ -123,3 +124,8 @@ let delimitMate_expand_cr=1
 nmap <leader>= :bnext<CR>
 nmap <leader>- :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Airline config
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_theme='base16'
