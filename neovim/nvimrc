@@ -132,3 +132,4 @@ let g:airline_theme='base16'
 
 " Buffertabline config
 let g:buftabline_show=1
+let g:buftabline_numbers=1
