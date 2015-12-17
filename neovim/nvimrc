@@ -55,7 +55,6 @@ let mapleader=","
 
 filetype plugin indent on
 syntax on
-au BufNewFile,BufRead *.sls setlocal ft=yaml
 
 " Tab settings
 set expandtab
@@ -136,3 +135,10 @@ let g:buftabline_numbers=1
 
 " Better highlight color
 hi Search guibg=LightBlue
+
+" File types
+if has('autocmd') && !exists('autocommands_loaded')
+    let autocommands_loaded = 1
+    autocmd FileType go setlocal ts=8 sts=8 sw=8 noexpandtab
+    autocmd BufNewFile,BufRead *.sls setlocal ft=yaml
+endif
