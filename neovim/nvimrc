@@ -66,8 +66,6 @@ set sw=4
 set hlsearch
 set ignorecase " case insensitive searching
 set smartcase " case-sensitive if expresson contains a capital letter
-" Search for the word under your cursor
-nnoremap <leader>/ "fyiw :/<c-r>f<cr>
 
 set showcmd
 set number
@@ -87,12 +85,19 @@ inoremap jj <ESC>
 inoremap jk <ESC>
 nnoremap K i<CR><Esc>
 noremap <space> :let @/=''<CR>
+nnoremap <leader>/ "fyiw :/<c-r>f<cr>
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 map <leader>w <C-w>w
 map <leader>so :so ~/.config/nvim/init.vim<cr>
 map <leader>df :e! ~/.dotfiles<cr>
 map <leader>f :FZF<cr>
+map <leader>sp :sp<cr>
+map <leader>vs :vs<cr>
+map <leader>q :q<cr>
+nmap <leader>= :bnext<CR>
+nmap <leader>- :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
@@ -123,11 +128,6 @@ autocmd! BufWritePost * Neomake
 
 " Delimate settings
 let delimitMate_expand_cr=1
-
-" Buffer navigation
-nmap <leader>= :bnext<CR>
-nmap <leader>- :bprevious<CR>
-nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Airline config
 let g:airline_left_sep=''
