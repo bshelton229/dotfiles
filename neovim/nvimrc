@@ -66,6 +66,8 @@ set sw=4
 set hlsearch
 set ignorecase " case insensitive searching
 set smartcase " case-sensitive if expresson contains a capital letter
+" Search for the word under your cursor
+nnoremap <leader>/ "fyiw :/<c-r>f<cr>
 
 set showcmd
 set number
