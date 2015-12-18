@@ -91,6 +91,8 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 map <leader>w <C-w>w
 map <leader>so :so ~/.config/nvim/init.vim<cr>
+map <leader>df :e! ~/.dotfiles<cr>
+map <leader>f :FZF<cr>
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
