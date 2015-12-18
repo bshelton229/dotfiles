@@ -89,7 +89,8 @@ nnoremap K i<CR><Esc>
 noremap <space> :let @/=''<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
-
+map <leader>w <C-w>w
+map <leader>so :so ~/.config/nvim/init.vim<cr>
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
