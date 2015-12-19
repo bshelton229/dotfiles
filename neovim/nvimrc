@@ -10,7 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
-Plug 'jeetsukumaran/vim-buffergator'
+" Plug 'jeetsukumaran/vim-buffergator'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'SirVer/ultisnips'
@@ -98,9 +98,14 @@ map <leader>q :q<cr>
 nmap <leader>= :bnext<CR>
 nmap <leader>- :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
+nnoremap <C-h> <C-W>h
+if has('nvim')
+    " Crazy neovim hack dealing with ctrl-h being backspace
+    " https://github.com/neovim/neovim/issues/2048
+    nmap <BS> <C-W>h
+endif
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
-nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
 " Buffergator
