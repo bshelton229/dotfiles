@@ -3,7 +3,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gmarik/Vundle.vim'
-Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
