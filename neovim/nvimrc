@@ -98,6 +98,10 @@ map <leader>q :q<cr>
 nmap <leader>= :bnext<CR>
 nmap <leader>- :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
@@ -164,3 +168,6 @@ vmap <leader>[ <gv
 vmap <leader>] >gv
 nmap <leader>[ <<
 nmap <leader>] >>
+
+" CTAGS
+set tags=TAGS;
