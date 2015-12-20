@@ -37,6 +37,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'Shougo/deoplete.nvim'
+Plug 'elixir-lang/vim-elixir'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
@@ -96,6 +97,7 @@ map <leader>f :FZF<cr>
 map <leader>sp :sp<cr>
 map <leader>vs :vs<cr>
 map <leader>q :q<cr>
+map <leader>w :w<cr>
 nmap <leader>= :bnext<CR>
 nmap <leader>- :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
