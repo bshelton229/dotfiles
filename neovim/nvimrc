@@ -2,7 +2,6 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'gmarik/Vundle.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
@@ -10,13 +9,11 @@ Plug 'tpope/vim-surround'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
-" Plug 'jeetsukumaran/vim-buffergator'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-rails'
-Plug 'itchyny/lightline.vim'
 Plug 'wting/rust.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'digitaltoad/vim-jade'
@@ -49,7 +46,7 @@ Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " Color scheme settings
-colorscheme base16-twilight
+colorscheme base16-solarized
 set background=dark
 
 "The comma leader
