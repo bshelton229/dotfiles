@@ -110,7 +110,8 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 
 " bind K to grep word under cursor
-nnoremap K :Ag! "<C-R><C-W>"<CR>
+" Gets in the way of my split thing
+" nnoremap K :Ag! "<C-R><C-W>"<CR>
 
 " Buffergator
 let g:buffergator_viewport_split_policy="T"
