@@ -81,8 +81,6 @@ set undolevels=1000
 set undoreload=10000
 
 " Key maps
-inoremap jj <ESC>
-inoremap jk <ESC>
 nnoremap K i<CR><Esc>
 noremap <space> :let @/=''<CR>
 nnoremap <leader>/ "fyiw :/<c-r>f<cr>
