@@ -49,7 +49,7 @@ Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " Color scheme settings
-colorscheme base16-twilight
+colorscheme base16-bespin
 set background=dark
 
 "The comma leader
