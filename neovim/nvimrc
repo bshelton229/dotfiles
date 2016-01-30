@@ -216,3 +216,7 @@ nnoremap <silent> <Leader>g :call fzf#run({
   \   'options': '+m',
   \   'down':    len(<sid>buflist()) + 2
   \ })<CR>
+
+" Neovim Python configuration
+let g:python_host_prog='/usr/local/bin/python'
+let g:python3_host_prog='/usr/local/bin/python3'
