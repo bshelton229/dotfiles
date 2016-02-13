@@ -38,6 +38,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'slim-template/vim-slim'
 Plug 'cespare/vim-toml'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
