@@ -39,6 +39,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'slim-template/vim-slim'
 Plug 'cespare/vim-toml'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'python-rope/ropevim'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
