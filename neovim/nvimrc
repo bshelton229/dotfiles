@@ -41,6 +41,7 @@ Plug 'slim-template/vim-slim'
 Plug 'cespare/vim-toml'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'python-rope/ropevim'
+Plug 'janko-m/vim-test'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
