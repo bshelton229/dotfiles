@@ -223,3 +223,8 @@ nnoremap <silent> <Leader>g :call fzf#run({
 " Neovim Python configuration
 let g:python_host_prog='/usr/local/bin/python'
 let g:python3_host_prog='/usr/local/bin/python3'
+
+" Allow escape to exit in terminal
+" Should be fine but will disable escape for
+" other purposes in term
+tnoremap <Esc> <C-\><C-n>
