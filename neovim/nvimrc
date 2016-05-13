@@ -228,4 +228,4 @@ let g:python3_host_prog='/usr/local/bin/python3'
 " Allow escape to exit in terminal
 " Should be fine but will disable escape for
 " other purposes in term
-tnoremap <Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
