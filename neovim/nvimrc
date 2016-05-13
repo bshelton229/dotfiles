@@ -45,6 +45,7 @@ Plug 'janko-m/vim-test'
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
 Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
 
 " Themes
 Plug 'chriskempson/base16-vim'
