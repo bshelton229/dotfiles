@@ -48,12 +48,13 @@ Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 
 " Themes
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
 " Color scheme settings
-colorscheme base16-ashes
+" colorscheme base16-ashes
+colorscheme delek
 set background=dark
 
 "The comma leader
@@ -150,7 +151,7 @@ let delimitMate_expand_cr=1
 " Airline config
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='base16'
+" let g:airline_theme='base16'
 
 " Buffertabline config
 let g:buftabline_show=1
