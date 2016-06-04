@@ -54,6 +54,7 @@ Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Color scheme settings
+set termguicolors
 colorscheme gruvbox
 set background=dark
 let g:solarized_termcolors=256
