@@ -48,14 +48,15 @@ Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 
 " Themes
-" Plug 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
 " Color scheme settings
-" colorscheme base16-ashes
-colorscheme delek
+colorscheme gruvbox
 set background=dark
+let g:solarized_termcolors=256
 
 "The comma leader
 let mapleader=","
@@ -151,14 +152,14 @@ let delimitMate_expand_cr=1
 " Airline config
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-" let g:airline_theme='base16'
+let g:airline_theme='distinguished'
 
 " Buffertabline config
 let g:buftabline_show=1
 let g:buftabline_numbers=1
 
 " Better highlight color
-hi Search guibg=LightBlue
+hi Search guibg=LightBlue ctermbg=blue
 
 " File types
 if has('autocmd') && !exists('autocommands_loaded')
