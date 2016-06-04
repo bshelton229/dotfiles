@@ -50,6 +50,7 @@ Plug 'kchmck/vim-coffee-script'
 " Themes
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
