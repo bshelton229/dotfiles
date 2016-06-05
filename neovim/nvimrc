@@ -51,6 +51,8 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'nanotech/jellybeans.vim'
+Plug 'owickstrom/vim-colors-paramount'
+Plug 'gosukiwi/vim-atom-dark'
 
 call plug#end()
 
