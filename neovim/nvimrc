@@ -46,6 +46,7 @@ Plug 'janko-m/vim-test'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
+Plug 'vim-scripts/groovy.vim'
 
 " Themes
 Plug 'chriskempson/base16-vim'
@@ -58,7 +59,8 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme atom-dark
 set background=dark
 let g:solarized_termcolors=256
 
