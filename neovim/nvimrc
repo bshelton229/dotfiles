@@ -47,6 +47,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 Plug 'vim-scripts/groovy.vim'
+Plug 'hashivim/vim-hashicorp-tools'
 
 " Themes
 Plug 'chriskempson/base16-vim'
