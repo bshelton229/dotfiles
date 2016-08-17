@@ -238,3 +238,6 @@ let g:python3_host_prog='/usr/local/bin/python3'
 " Should be fine but will disable escape for
 " other purposes in term
 tnoremap <leader><Esc> <C-\><C-n>
+
+" Vim-go
+let g:go_fmt_command = "goimports"
