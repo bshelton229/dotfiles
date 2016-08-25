@@ -60,13 +60,12 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-" colorscheme gruvbox
-colorscheme atom-dark
+colorscheme base16-railscasts
 set background=dark
 let g:solarized_termcolors=256
 
 "The comma leader
-let mapleader=" "
+let mapleader=","
 
 filetype plugin indent on
 syntax on
