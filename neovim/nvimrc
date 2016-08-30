@@ -55,12 +55,13 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'nanotech/jellybeans.vim'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'gosukiwi/vim-atom-dark'
+Plug 'dracula/vim'
 
 call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme base16-railscasts
+colorscheme dracula
 set background=dark
 let g:solarized_termcolors=256
 
