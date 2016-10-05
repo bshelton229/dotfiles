@@ -61,7 +61,7 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme base16-atelier-heath
+colorscheme base16-default-dark
 set background=dark
 let g:solarized_termcolors=256
 
