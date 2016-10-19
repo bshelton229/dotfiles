@@ -121,6 +121,7 @@ endif
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
+imap jj <Esc>
 
 " bind K to grep word under cursor
 " Gets in the way of my split thing
