@@ -175,6 +175,7 @@ if has('autocmd') && !exists('autocommands_loaded')
     let autocommands_loaded = 1
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType terraform setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
 
     autocmd BufNewFile,BufRead *.sls setlocal ft=yaml
@@ -249,3 +250,6 @@ map <leader>wq :wq!<kEnter>  "Works in normal mode, must press Esc first"
 
 let g:gitgutter_realtime = 1
 set updatetime=250
+
+" hashicorp
+let g:terraform_fmt_on_save=1
