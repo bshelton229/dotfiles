@@ -161,7 +161,6 @@ let delimitMate_expand_cr=1
 " Airline config
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='distinguished'
 
 " Buffertabline config
 let g:buftabline_show=1
