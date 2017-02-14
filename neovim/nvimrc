@@ -57,12 +57,13 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'dracula/vim'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme base16-ir-black
+colorscheme base16-ashes
 set background=dark
 let g:solarized_termcolors=256
 
@@ -253,3 +254,5 @@ set updatetime=250
 
 " hashicorp
 let g:terraform_fmt_on_save=1
+
+autocmd VimResized * wincmd =
