@@ -67,6 +67,8 @@ colorscheme atom-dark
 set background=dark
 let g:solarized_termcolors=256
 
+set noswapfile
+
 "The comma leader
 let mapleader=","
 
