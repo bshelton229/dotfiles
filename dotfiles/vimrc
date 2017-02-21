@@ -255,3 +255,5 @@ autocmd VimResized * wincmd =
 
 " Tie this to the system clipboard
 set clipboard=unnamed
+
+hi VertSplit guibg=bg guifg=bg

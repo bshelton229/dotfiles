@@ -258,3 +258,5 @@ set updatetime=250
 let g:terraform_fmt_on_save=1
 
 autocmd VimResized * wincmd =
+
+hi VertSplit guibg=bg guifg=bg
