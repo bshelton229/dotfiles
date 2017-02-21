@@ -253,4 +253,5 @@ let g:terraform_fmt_on_save=1
 
 autocmd VimResized * wincmd =
 
+" Tie this to the system clipboard
 set clipboard=unnamed
