@@ -93,7 +93,7 @@ set backspace=2
 let g:AutoPairsFlyMode = 1
 
 " Undo
-set undodir=~/.nvim/undodir
+set undodir=~/.vim/undodir
 set undofile
 set undolevels=1000
 set undoreload=10000
