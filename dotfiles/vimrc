@@ -105,7 +105,7 @@ nnoremap <leader>/ "fyiw :/<c-r>f<cr>
 map <C-n> :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 map <leader>w <C-w>w
-map <leader>so :so ~/.config/nvim/init.vim<cr>
+map <leader>so :so ~/.vimrccr>
 map <leader>df :e! ~/.dotfiles<cr>
 map <leader>f :FZF<cr>
 map <leader>sp :sp<cr>
@@ -116,11 +116,6 @@ nmap <leader>= :bnext<CR>
 nmap <leader>- :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nnoremap <C-h> <C-W>h
-if has('nvim')
-    " Crazy neovim hack dealing with ctrl-h being backspace
-    " https://github.com/neovim/neovim/issues/2048
-    nmap <BS> <C-W>h
-endif
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
