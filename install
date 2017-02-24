@@ -17,6 +17,11 @@ def create_links():
         relpath = os.path.relpath(path, HOME)
         if os.path.isfile(path):
             dst = os.path.join(HOME, ".{}".format(file))
+            # If the file exists remove it
+            # NOTE: This will cause data loss, we can read links and rename to
+            # .old later if I feel like.
+            if os.path.isfile(dst):
+                os.unlink(dst)
             try:
                 os.symlink(relpath, dst)
             except OSError:
