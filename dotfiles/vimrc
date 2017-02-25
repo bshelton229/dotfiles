@@ -62,7 +62,7 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme atom-dark
+colorscheme base16-harmonic16-dark
 set background=dark
 let g:solarized_termcolors=256
 
