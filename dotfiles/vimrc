@@ -29,8 +29,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'ap/vim-buftabline'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'elixir-lang/vim-elixir'
@@ -62,7 +60,7 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme base16-harmonic16-dark
+colorscheme base16-harmonic-dark
 set background=dark
 let g:solarized_termcolors=256
 
@@ -154,10 +152,6 @@ autocmd! BufWritePost * Neomake
 
 " Delimate settings
 let delimitMate_expand_cr=1
-
-" Airline config
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 
 " Buffertabline config
 let g:buftabline_show=1
