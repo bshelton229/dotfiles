@@ -11,7 +11,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-rails'
 Plug 'wting/rust.vim'
@@ -29,8 +28,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'ap/vim-buftabline'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'Shougo/deoplete.nvim'
@@ -63,7 +61,7 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme atom-dark
+colorscheme base16-chalk
 set background=dark
 let g:solarized_termcolors=256
 
@@ -239,7 +237,7 @@ nnoremap <silent> <Leader>g :call fzf#run({
 
 " Neovim Python configuration
 let g:python_host_prog='/usr/local/bin/python'
-let g:python3_host_prog='/usr/local/bin/python3'
+let g:python3_host_prog='/Users/bshelton/.pyenv/versions/3.6.0/bin/python'
 
 " Allow escape to exit in terminal
 " Should be fine but will disable escape for
@@ -256,7 +254,7 @@ let g:gitgutter_realtime = 1
 set updatetime=250
 
 " hashicorp
-" let g:terraform_fmt_on_save=1
+let g:terraform_fmt_on_save=1
 
 autocmd VimResized * wincmd =
 
