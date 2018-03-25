@@ -37,6 +37,7 @@ Plug 'cespare/vim-toml'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'python-rope/ropevim'
 Plug 'janko-m/vim-test'
+Plug 'machakann/vim-highlightedyank'
 
 " Language plugins
 Plug 'vim-scripts/indentpython.vim'
@@ -59,7 +60,7 @@ call plug#end()
 
 " Color scheme settings
 set termguicolors
-colorscheme atom-dark-256
+colorscheme base16-twilight
 set background=dark
 let g:solarized_termcolors=256
 
@@ -245,3 +246,5 @@ autocmd VimResized * wincmd =
 set clipboard=unnamed
 
 hi VertSplit guibg=bg guifg=bg
+
+let g:highlightedyank_highlight_duration = 1500
