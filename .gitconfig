@@ -13,7 +13,7 @@
 [color]
     ui = true
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore-global
 	editor = vim
 [push]
 	default = simple
@@ -21,5 +21,11 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[pull]
+    rebase = false
+[advice]
+    detachedHead = false
+[user]
+    name = Bryan Shelton
 [include]
     path = ~/.gitconfig-local
