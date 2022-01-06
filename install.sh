@@ -14,11 +14,11 @@ done
 
 
 function install_hooks() {
-	dest=$1
-	for hook in ${SCRIPT_DIR}/git-hooks/*; do
-		basename=$(basename $hook)
-		ln -nfs $hook $dest/$basename
-	done
+    dest=$1
+    for hook in ${SCRIPT_DIR}/git-hooks/*; do
+        basename=$(basename $hook)
+        ln -nfs $hook $dest/$basename
+    done
 }
 
 
