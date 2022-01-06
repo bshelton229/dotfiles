@@ -22,7 +22,11 @@ function install_hooks() {
 }
 
 
-for workspace_git_hooks_dir in /workspaces/*/.git/hooks; do
-	echo "Installing git hooks into ${workspace_git_hooks_dir}"
-	install_hooks $workspace_git_hooks_dir
-done
+if [[ -d /workspaces ]]; then
+    for workspace_git_hooks_dir in /workspaces/*/.git/hooks; do
+        echo "Installing git hooks into ${workspace_git_hooks_dir}"
+        install_hooks $workspace_git_hooks_dir
+    done
+else
+    echo "No /workspaces directory found"
+fi
