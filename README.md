@@ -1,3 +1,3 @@
-## My dot files
+## Github Codespaces Oriented Dotfiles
 
-Hello, these are my dotfiles
+See the `install.sh` script.
